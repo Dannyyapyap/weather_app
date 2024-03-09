@@ -1,0 +1,43 @@
+:root {
+  --default-font: "Ubuntu";
+  --primary: #275992;
+  --primary-light: #3476c1;
+  --primary-hover: #17375b;
+  --secondary: #FDB813;
+  --secondary-light: #fdbf2b;
+  --secondary-hover: #fdc642;
+  --title: #000000;
+  --white: #ffffff;
+  --white-block: #f9f9f9;
+  --background:#f7f7f7;
+  --nav-links: #737373;
+  --box-border: #dfdfdf;
+  --icon: #6a6a6a;
+  --shadow: 0px 10px 30px -20px rgba(0,0,0,.3);
+}
+
+/* Overall CSS */
+
+* {
+    font-family: var(--default-font);
+    outline: none;
+    padding: 0; }
+    *::after {
+      margin: 0;
+      padding: 0; }
+    *::before {
+      margin: 0;
+      padding: 0; }
+
+/* Loading screen during fallback */
+#preloader {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
