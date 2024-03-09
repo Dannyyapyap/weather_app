@@ -6,7 +6,7 @@ document.title = "Today's Weather";
 
 export default function Dashboard() {
   return (
-    <div className="dashboard-container">
+    <div className="dashboardContainer">
       <SearchbarMain />
       <WeatherDashboard />
     </div>

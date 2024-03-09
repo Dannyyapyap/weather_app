@@ -15,7 +15,7 @@ let pages = (
 export default function WeatherApplication() {
   document.title = "Weather Application";
   return (
-    <div className="main-container">
+    <div className="mainContainer">
       <BrowserRouter>{pages}</BrowserRouter>
     </div>
   );

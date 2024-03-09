@@ -4,7 +4,7 @@ import HistoryDisplay from "../historyDisplay";
 
 export default function WeatherDashboard() {
   return (
-    <div className="weatherDashboard-container">
+    <div className="weatherDashboardContainer">
       <WeatherDisplay />
       <HistoryDisplay/>
     </div>

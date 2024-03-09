@@ -1,4 +1,4 @@
-.historyRecord-container {
+.historyRecordContainer {
   display: flex;
   flex-flow: row wrap;
   background-color: var(--history-record);
@@ -19,7 +19,7 @@
   margin-left: auto;
 }
 
-.historyRecord-action {
+.historyRecordAction {
   display: flex;
   gap: 1em;
   margin-left: auto;

@@ -7,14 +7,14 @@ export default function HistoryRecord({name, country, dt}) {
   const [isSearchHistory, setIsSearchHistory] = useState(false);
   const [isDeleteHistory, setIsDeleteHistory] = useState(false);
   return (
-    <div className="historyRecord-container">
+    <div className="historyRecordContainer">
       <div className="description">
         <span>
           {name}, {country}
         </span>
         <span className="queryTime">{EpochConverter(dt)}</span>
       </div>
-      <div className="historyRecord-action">
+      <div className="historyRecordAction">
         <SearchHistoryBtn isLoading={isSearchHistory} />
         <DeleteHistoryBtn isLoading={isDeleteHistory} />
       </div>

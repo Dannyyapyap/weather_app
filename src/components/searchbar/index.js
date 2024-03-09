@@ -21,8 +21,8 @@ function SearchbarMain() {
   }
 
   return (
-    <div className="searchBar-container">
-      <div className="searchBar-input">
+    <div className="searchBarContainer">
+      <div className="searchBarInput">
         <a>Country, City or Location</a>
         <input
           placeholder="Search current weather"

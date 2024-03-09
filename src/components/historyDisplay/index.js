@@ -6,7 +6,7 @@ export default function HistoryDisplay() {
   const sampleRes = res.results;
 
   return (
-    <div className="historyDisplay-container">
+    <div className="historyDisplayContainer">
       Search History
       {sampleRes.map((item, key) => {
         return (

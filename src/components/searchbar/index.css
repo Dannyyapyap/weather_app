@@ -1,4 +1,4 @@
-.searchBar-container {
+.searchBarContainer {
   display: flex;
   gap: 1em;
   height: 60px;
@@ -6,7 +6,7 @@
   z-index: 1;
 }
 
-.searchBar-input {
+.searchBarInput {
   display: flex;
   flex: 1;
   flex-flow: column wrap;
@@ -16,16 +16,16 @@
   padding: 5px 20px;
 }
 
-.searchBar-input a {
+.searchBarInput a {
   opacity: 40%;
   font-size: 0.625em;
 }
 
-.searchBar-input input {
+.searchBarInput input {
   background-color: transparent;
   border: none;
 }
 
-.searchBar-input input::placeholder {
+.searchBarInput input::placeholder {
   font-size: 0.825em;
 }
