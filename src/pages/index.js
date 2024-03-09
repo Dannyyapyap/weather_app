@@ -1,5 +1,9 @@
+import './index.css'
+
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./dashboard";
+
+// To add more pages, import the component e.g. ContactPage, and add it to the route within "pages" variable. 
 
 let pages = (
   <Routes>
@@ -11,8 +15,8 @@ let pages = (
 export default function WeatherApplication() {
   document.title = "Weather Application";
   return (
-    <>
+    <div className="main-container">
       <BrowserRouter>{pages}</BrowserRouter>
-    </>
+    </div>
   );
 }

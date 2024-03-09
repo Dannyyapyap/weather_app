@@ -1,0 +1,53 @@
+.historyRecord-container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--history-record);
+  border-radius: 16px;
+  padding: 10px 20px;
+}
+
+.description {
+  display: inline-flex;
+  flex: 2;
+  flex-direction: row;
+  margin-right: auto;
+  align-items: center;
+  padding-right: 1em;
+}
+
+.queryTime {
+  margin-left: auto;
+}
+
+.historyRecord-action {
+  display: flex;
+  gap: 1em;
+  margin-left: auto;
+  align-items: center;
+}
+
+@media (max-width: 481px) {
+  .description {
+    flex-wrap: wrap;
+  }
+
+  .description span{
+    margin-right: auto;
+  }
+
+  .historyRecord-container {
+    padding: 10px;
+  }
+
+  .queryTime {
+    font-size: 0.7em;
+  }
+
+  .historyRecord-container {
+    padding: 10px;
+  }
+
+  .historyRecord-action {
+    font-size: 0.7em;
+  }
+}

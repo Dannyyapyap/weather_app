@@ -1,0 +1,6 @@
+Assumption: 
+1) If user did not allow for tracking of location on browser, the default will be Singapore
+2) API call will obtain lat and lon of Singapore by default
+3) Limit will be set to 1 to display only 1 related search result 
+4) Lat and Lon will be defaulted to Singapore Geographical location if not specified or detected
+5) Epoch time will be converted to Singapore time

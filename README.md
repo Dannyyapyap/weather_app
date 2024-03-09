@@ -5,7 +5,7 @@ Compatible on node v16.19.1
 
 Configure .env-cmdrc.json to 
 1) Input your API token 
-2) Update host URL that is for the application that is deployed on your server.
+2) Update host URL where the application is serve in your environment.
 
 ## Installing dependecies
 ```bash

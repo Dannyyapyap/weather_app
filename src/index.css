@@ -1,33 +1,40 @@
+/* Master stylesheet for specifying root style to project */
+
 :root {
-  --default-font: "Ubuntu";
-  --primary: #275992;
-  --primary-light: #3476c1;
-  --primary-hover: #17375b;
-  --secondary: #FDB813;
-  --secondary-light: #fdbf2b;
-  --secondary-hover: #fdc642;
-  --title: #000000;
-  --white: #ffffff;
-  --white-block: #f9f9f9;
-  --background:#f7f7f7;
-  --nav-links: #737373;
-  --box-border: #dfdfdf;
-  --icon: #6a6a6a;
-  --shadow: 0px 10px 30px -20px rgba(0,0,0,.3);
+  --default-font: "Noto Sans";
+  --default-font-size: 16px;
+  --text-color: #000000;
+  --history-btn-background: #FFFFFF;
+  --history-btn-icon : #5e5d5d;
+  --history-btn-icon-border-color : #FFFFFF;
+  --weather-display-container-border-color: #FFFFFF;
+  --weather-display-today-temperature: #6C40B5;
+  --location-color: #666666;
+  --component-container: rgba(255, 255, 255, 0.2);
+  --history-container: rgba(255, 255, 255, 0.2);
+  --history-record: rgba(255, 255, 255, 0.4);
+  --background-img-light: url("assets/bg-light.png");
+  --background-img-dark: url("assets/bg-dark.png");
+  --cloud: url("assets/cloud.png");
+  --sun: url("assets/sun.png");
 }
 
 /* Overall CSS */
 
 * {
-    font-family: var(--default-font);
-    outline: none;
-    padding: 0; }
-    *::after {
-      margin: 0;
-      padding: 0; }
-    *::before {
-      margin: 0;
-      padding: 0; }
+  font-family: var(--default-font);
+  font-size: var(--default-font-size);
+  outline: none;
+  padding: 0;
+}
+*::after {
+  margin: 0;
+  padding: 0;
+}
+*::before {
+  margin: 0;
+  padding: 0;
+}
 
 /* Loading screen during fallback */
 #preloader {
@@ -40,4 +47,13 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--text-color) !important;
+}
