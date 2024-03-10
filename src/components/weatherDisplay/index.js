@@ -43,9 +43,11 @@ export default function WeatherDisplay() {
           />
         </div>
         <div className="currentWeatherTemp">
-          <span style={{ fontWeight: 700 }}>Today's Weather</span>
+          <span style={{ fontWeight: 700 }} className="textInfo">
+            Today's Weather
+          </span>
           <h1>{current_temp}°</h1>
-          <span>
+          <span className="textInfo">
             H: {max_temp}° L:{min_temp}°
           </span>
           <span className="locationCurrent">{location}</span>

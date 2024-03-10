@@ -1,5 +1,6 @@
 .squareBtn {
-  background-color: #6c40b5;
+  display: flex;
+  background-color: var(--square-btn-background);
   border: none;
   border-radius: 20px;
   padding: 20px;
@@ -15,6 +16,7 @@
 }
 
 .roundBtn {
+  display: flex;
   background-color: var(--history-btn-background);
   border-radius: 100px;
   border-color: var(--history-btn-icon-border-color);

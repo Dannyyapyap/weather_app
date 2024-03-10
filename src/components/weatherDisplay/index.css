@@ -33,6 +33,10 @@
   transform: translate(200%, -45%);
 }
 
+.textInfo {
+  color: var(--text-color)
+}
+
 @media (max-width: 1024px) {
   .currentWeatherTemp,
   .currentWeatherDetails {

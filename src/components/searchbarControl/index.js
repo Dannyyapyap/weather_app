@@ -1,14 +1,19 @@
 import "./index.css";
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+
+// APIs
 import { GetLatLon } from "../../api/getLatLon";
 import { GetWeather } from "../../api/getWeather";
-import { useDispatch } from "react-redux";
+// State management
 import { addCurrentTemp } from "../../store/action";
 import { addHistoryRecord } from "../../store/action";
+
 import SearchBarBtn from "../buttons/searchBarBtn";
+import ThemeSwitcher from "../themeSwitcher";
 import Swal from "sweetalert2";
 
-function SearchbarMain() {
+function SearchbarControl() {
   const [isSearch, setIsSearch] = useState(false);
   const [isFieldEmpty, setIsFieldEmpty] = useState(true);
   const [fieldData, setFieldData] = useState("");
@@ -28,8 +33,7 @@ function SearchbarMain() {
   }
 
   async function handleClick() {
-    // API call will return empty array when result is not found
-    // Have to create conditional check to validate response
+    // API call will return empty array when result is not found. Have to create conditional check to validate response
     let geo_data = [];
     let current_temp = "";
     setIsSearch(true);
@@ -40,16 +44,16 @@ function SearchbarMain() {
     }
 
     if (geo_data.length <= 0) {
-      // I have to throw an error alert here as invalid search result still returns empty array instead of error messages
+      // Have to throw an error alert here as invalid search returns empty array instead of error status code
       Swal.fire({
         icon: "error",
-        text: "No search result found. Please try again.",
+        text: "No matching search result found.",
       });
     } else {
       try {
         current_temp = await GetWeather(geo_data[0].lat, geo_data[0].lon);
         dispatch(addCurrentTemp(current_temp)); // Replace existing data that is shown on screen
-        dispatch(addHistoryRecord(current_temp)); // Save retrieve data to history log
+        dispatch(addHistoryRecord(current_temp)); // Save retrieved data to history log
       } catch (err) {
         setIsSearch(false);
       }
@@ -67,14 +71,16 @@ function SearchbarMain() {
           onChange={(e) => handleChange(e.target.value)}
         ></input>{" "}
       </div>
-
-      <SearchBarBtn
-        isLoading={isSearch}
-        isFieldEmpty={isFieldEmpty}
-        onClick={handleClick}
-      />
+      <div className="buttonControl">
+        <SearchBarBtn
+          isLoading={isSearch}
+          isFieldEmpty={isFieldEmpty}
+          onClick={handleClick}
+        />
+        <ThemeSwitcher />
+      </div>
     </div>
   );
 }
 
-export { SearchbarMain };
+export { SearchbarControl };

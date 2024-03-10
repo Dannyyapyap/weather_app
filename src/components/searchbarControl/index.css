@@ -1,9 +1,9 @@
 .searchBarContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
-  height: 60px;
   width: 100%;
-  z-index: 1;
+  color: var(--text-color);
 }
 
 .searchBarInput {
@@ -17,7 +17,7 @@
 }
 
 .searchBarInput a {
-  opacity: 40%;
+  opacity: 0.4;
   font-size: 0.625em;
 }
 
@@ -28,4 +28,9 @@
 
 .searchBarInput input::placeholder {
   font-size: 0.825em;
+}
+
+.buttonControl {
+  display: flex;
+  gap: 1em;
 }

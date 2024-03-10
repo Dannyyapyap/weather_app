@@ -8,6 +8,9 @@ import { Provider } from "react-redux";
 import { store } from "./store/store";
 // import reportWebVitals from './reportWebVitals';
 
+// Apply light theme by default to the root HTML element
+document.documentElement.classList.add('lightTheme');
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>

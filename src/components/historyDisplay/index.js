@@ -6,7 +6,7 @@ export default function HistoryDisplay() {
   const historyRecord = useSelector(state => state.historyRecords)
   return (
     <div className="historyDisplayContainer">
-      <span>Search History</span>
+      <span className="textInfo">Search History</span>
       {historyRecord.length >= 1 ? (
         historyRecord.toReversed().map((item, key) => {
           return (

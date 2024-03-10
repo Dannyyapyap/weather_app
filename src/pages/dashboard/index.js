@@ -1,5 +1,5 @@
 import "./index.css";
-import { SearchbarMain } from "../../components/searchbar";
+import { SearchbarControl } from "../../components/searchbarControl";
 import WeatherDashboard from "../../components/weatherDashboard";
 
 document.title = "Today's Weather";
@@ -7,7 +7,7 @@ document.title = "Today's Weather";
 export default function Dashboard() {
   return (
     <div className="dashboardContainer">
-      <SearchbarMain />
+      <SearchbarControl />
       <WeatherDashboard />
     </div>
   );

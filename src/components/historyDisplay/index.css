@@ -13,6 +13,11 @@
   width: 100%;
   justify-content: center;
   font-weight: 800;
+  color: var(--text-color);
+}
+
+.textInfo {
+  color: var(--text-color);
 }
 
 @media (max-width: 481px) {

@@ -3,20 +3,38 @@
 :root {
   --default-font: "Noto Sans";
   --default-font-size: 16px;
+  --cloud: url("assets/cloud.png");
+  --sun: url("assets/sun.png");
+}
+
+.lightTheme {
   --text-color: #000000;
+  --square-btn-background: #6C40B5;
   --history-btn-background: #FFFFFF;
-  --history-btn-icon : #5e5d5d;
-  --history-btn-icon-border-color : #FFFFFF;
+  --history-btn-icon: #5e5d5d;
+  --history-btn-icon-border-color: #FFFFFF;
   --weather-display-container-border-color: #FFFFFF;
-  --weather-display-today-temperature: #6C40B5;
+  --weather-display-today-temperature: #6c40b5;
   --location-color: #666666;
   --component-container: rgba(255, 255, 255, 0.2);
   --history-container: rgba(255, 255, 255, 0.2);
   --history-record: rgba(255, 255, 255, 0.4);
-  --background-img-light: url("assets/bg-light.png");
-  --background-img-dark: url("assets/bg-dark.png");
-  --cloud: url("assets/cloud.png");
-  --sun: url("assets/sun.png");
+  --background-img: url("assets/bg-light.png");
+}
+
+.darkTheme {
+  --text-color: #FFFFFF;
+  --square-btn-background: #28124D;
+  --history-btn-background: transparent;
+  --history-btn-icon: #8e8d8d;
+  --history-btn-icon-border-color: #8e8d8d;
+  --weather-display-container-border-color: transparent;
+  --weather-display-today-temperature: #FFFFFF;
+  --location-color: #FFFFFF;
+  --component-container: rgba(26, 26, 26, 0.4);
+  --history-container: rgba(26, 26, 26, 0.4);
+  --history-record: rgba(26, 26, 26, 0.4);
+  --background-img: url("assets/bg-dark.png");
 }
 
 /* Overall CSS */
@@ -34,6 +52,15 @@
 *::before {
   margin: 0;
   padding: 0;
+}
+
+::placeholder {
+  color: var(--text-color);
+  opacity: 0.3; 
+}
+
+input {
+  color: var(--text-color);
 }
 
 /* Loading screen during fallback */
@@ -54,6 +81,6 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: var(--text-color) !important;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--text-color) !important;
 }
