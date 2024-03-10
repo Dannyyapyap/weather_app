@@ -11,7 +11,8 @@
 import { API_URL_LAT_LON, API_TOKEN } from "../utils/connection";
 import Swal from "sweetalert2";
 
-export function getLatLon(country = "Singapore") {
+export function GetLatLon(country = "Singapore") {
+
   return new Promise((resolve) => {
     const xhr = new XMLHttpRequest();
 

@@ -1,16 +1,14 @@
 import "./index.css";
 import HistoryRecord from "../historyRecord";
-import res from "../../utils/sampleRes.json";
+import { useSelector } from "react-redux";
 
 export default function HistoryDisplay() {
-  // CODE TO RETRIEVE STATE FROM STORE, REPLACE RES.CURRENT_TEMP
-  const sampleRes = res.current_temp;
-
+  const historyRecord = useSelector(state => state.historyRecords)
   return (
     <div className="historyDisplayContainer">
-      Search History
-      {sampleRes.length >= 1 ? (
-        sampleRes.map((item, key) => {
+      <span>Search History</span>
+      {historyRecord.length >= 1 ? (
+        historyRecord.toReversed().map((item, key) => {
           return (
             <div key={key}>
               <HistoryRecord
@@ -24,7 +22,7 @@ export default function HistoryDisplay() {
           );
         })
       ) : (
-        <div className="noRecord">No Record</div>
+        <span className="noRecord">No Record</span>
       )}
     </div>
   );

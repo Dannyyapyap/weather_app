@@ -1,7 +1,10 @@
 import "./index.css";
 import { useState, useEffect } from "react";
-import { getLatLon } from "../../api/getLatLon";
-import { getWeather } from "../../api/getWeather";
+import { GetLatLon } from "../../api/getLatLon";
+import { GetWeather } from "../../api/getWeather";
+import { useDispatch } from "react-redux";
+import { addCurrentTemp } from "../../store/action";
+import { addHistoryRecord } from "../../store/action";
 import SearchBarBtn from "../buttons/searchBarBtn";
 import Swal from "sweetalert2";
 
@@ -9,6 +12,7 @@ function SearchbarMain() {
   const [isSearch, setIsSearch] = useState(false);
   const [isFieldEmpty, setIsFieldEmpty] = useState(true);
   const [fieldData, setFieldData] = useState("");
+  const dispatch = useDispatch();
 
   // Prevent user from submitting empty request with no input field
   useEffect(() => {
@@ -24,12 +28,16 @@ function SearchbarMain() {
   }
 
   async function handleClick() {
-    setIsSearch(true);
     // API call will return empty array when result is not found
     // Have to create conditional check to validate response
     let geo_data = [];
     let current_temp = "";
-    geo_data = await getLatLon(fieldData);
+    setIsSearch(true);
+    try {
+      geo_data = await GetLatLon(fieldData);
+    } catch (err) {
+      setIsSearch(false);
+    }
 
     if (geo_data.length <= 0) {
       // I have to throw an error alert here as invalid search result still returns empty array instead of error messages
@@ -38,12 +46,12 @@ function SearchbarMain() {
         text: "No search result found. Please try again.",
       });
     } else {
-      current_temp = await getWeather(geo_data[0].lat, geo_data[0].lon);
-
-      console.log("current temp", current_temp);
-      if (current_temp.cod !== "400") {
-        // UPDATE TO STORE IN PERSISTENT STATE
-
+      try {
+        current_temp = await GetWeather(geo_data[0].lat, geo_data[0].lon);
+        dispatch(addCurrentTemp(current_temp)); // Replace existing data that is shown on screen
+        dispatch(addHistoryRecord(current_temp)); // Save retrieve data to history log
+      } catch (err) {
+        setIsSearch(false);
       }
     }
     setIsSearch(false);
@@ -52,7 +60,7 @@ function SearchbarMain() {
   return (
     <div className="searchBarContainer">
       <div className="searchBarInput">
-        <a>Country, City or Location</a>
+        <a>City or Location</a>
         <input
           placeholder="Search current weather"
           id="search-query"

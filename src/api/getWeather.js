@@ -7,7 +7,9 @@
 import { API_URL_CURRENT_WEATHER, API_TOKEN } from "../utils/connection";
 import Swal from "sweetalert2";
 
-export function getWeather(lat = 1.2899175, lon = 103.8519072) {
+export function GetWeather(lat = 1.2899175, lon = 103.8519072) {
+
+
   return new Promise((resolve) => {
     const xhr = new XMLHttpRequest();
     const searchParam = `?lat=${lat}&lon=${lon}&units=metric`;
@@ -19,6 +21,7 @@ export function getWeather(lat = 1.2899175, lon = 103.8519072) {
         if (xhr.status === 200) {
           try {
             const data = JSON.parse(xhr.responseText);
+            
             resolve(data);
           } catch (error) {
             Swal.fire({

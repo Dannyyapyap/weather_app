@@ -1,15 +1,22 @@
-.historyDisplayContainer{
-    display: flex;
-    flex-flow: column wrap;
-    gap: 1em;
-    width: 100%;
-    border-radius: 24px;
-    padding: 15px 20px;
-    background-color: var(--history-container);
+.historyDisplayContainer {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+  width: 100%;
+  border-radius: 24px;
+  padding: 15px 20px;
+  background-color: var(--history-container);
 }
 
-.noRecord{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.noRecord {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-weight: 800;
+}
+
+@media (max-width: 481px) {
+  .historyDisplayContainer span {
+    font-size: 0.7em;
+  }
 }
