@@ -81,4 +81,13 @@
     width: 40%;
     transform: translate(90%, -55%);
   }
+
+  .currentWeatherTemp h1 {
+    font-size: 3em;
+  }
+
+  .currentWeatherDetails *,
+  .currentWeatherTemp * {
+    font-size: 0.7em;
+  }
 }

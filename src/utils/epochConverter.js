@@ -19,5 +19,9 @@ export default function EpochConverter(epochTime) {
     hour12: true,
     timeZone: "Asia/Singapore",
   };
-  return dateUTC.toLocaleString("en-SG", options);
+
+  const formattedDate = dateUTC.toLocaleString("en-SG", options);
+
+  // Replace slashes with dashes
+  return formattedDate.replace(/\//g, '-');
 }

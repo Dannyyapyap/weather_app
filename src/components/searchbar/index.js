@@ -38,10 +38,12 @@ function SearchbarMain() {
         text: "No search result found. Please try again.",
       });
     } else {
-      current_temp = await getWeather(geo_data.lat, geo_data.log);
+      current_temp = await getWeather(geo_data[0].lat, geo_data[0].lon);
+
       console.log("current temp", current_temp);
-      if (current_temp !== "") {
+      if (current_temp.cod !== "400") {
         // UPDATE TO STORE IN PERSISTENT STATE
+
       }
     }
     setIsSearch(false);

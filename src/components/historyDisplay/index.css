@@ -7,3 +7,9 @@
     padding: 15px 20px;
     background-color: var(--history-container);
 }
+
+.noRecord{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
