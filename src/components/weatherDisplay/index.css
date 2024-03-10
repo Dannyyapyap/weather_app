@@ -34,8 +34,8 @@
 }
 
 @media (max-width: 1024px) {
-  .current-weather-temp,
-  .current-weather-details {
+  .currentWeatherTemp,
+  .currentWeatherDetails {
     flex: 1;
   }
 

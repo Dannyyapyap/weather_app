@@ -1,48 +1,27 @@
 import "./index.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faTrash } from "@fortawesome/free-solid-svg-icons";
-import Spinner from "../../components/animations";
 
-function SearchBarBtn({isLoading, isFieldEmpty}) {
+function SquareBtn({ children, disabled, onClick }) {
   return (
-    <button className="searchBarBtn" disabled={isLoading || isFieldEmpty}>
-      {isLoading ? (
-        <Spinner />
-      ) : (
-        <FontAwesomeIcon
-          icon={faMagnifyingGlass}
-        />
-      )}
+    <button
+      className="squareBtn"
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {children}
     </button>
   );
 }
 
-function SearchHistoryBtn({isLoading}) {
+function RoundBtn({ children, disabled, onClick }) {
   return (
-    <button className="historyActionButton" disabled={isLoading}>
-      {isLoading ? (
-        <Spinner />
-      ) : (
-        <FontAwesomeIcon
-          icon={faMagnifyingGlass}
-        />
-      )}
+    <button
+      className="roundBtn"
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {children}
     </button>
   );
 }
 
-function DeleteHistoryBtn({isLoading}) {
-  return (
-    <button className="historyActionButton" disabled={isLoading}>
-      {isLoading ? (
-        <Spinner />
-      ) : (
-        <FontAwesomeIcon
-          icon={faTrash}
-        />
-      )}
-    </button>
-  );
-}
-
-export { SearchBarBtn, SearchHistoryBtn, DeleteHistoryBtn };
+export {SquareBtn, RoundBtn}

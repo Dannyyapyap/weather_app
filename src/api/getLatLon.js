@@ -8,26 +8,49 @@
 // 2) API call will obtain lat and lon of Singapore by default
 // 3) Limit will be set to 1 to display only 1 related search result 
 
-import { API_URL_LAT_LON, API_TOKEN } from "utils/connections";
+import { API_URL_LAT_LON, API_TOKEN } from "../utils/connection";
+import Swal from "sweetalert2";
 
-export async function getLatLon(country = "Singapore") {
+export function getLatLon(country = "Singapore") {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
 
-  let searchParam = `?q=${country}&limit=1`;
-  let apiKey = `&appid=${API_TOKEN}`;
+    const searchParam = `?q=${country}&limit=1`;
+    const apiKey = `&appid=${API_TOKEN}`;
+    const url = API_URL_LAT_LON + searchParam + apiKey;
 
-  let url = API_URL_LAT_LON + searchParam + apiKey;
-
-  await fetch(url, { method: "GET" })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Error with network, please try again.");
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          try {
+            const data = JSON.parse(xhr.responseText);
+            resolve(data);
+          } catch (error) {
+            reject(new Error("Error parsing response data."));
+            Swal.fire({
+              icon: "error",
+              text: error,
+            });
+          }
+        } else {
+          reject(new Error("Error with network, please try again."));
+          Swal.fire({
+            icon: "error",
+            text: "Error with network, please try again.",
+          });
+        }
       }
-      return response.json();
-    })
-    .then((data) => {
-      return data;
-    })
-    .catch((error) => {
-      console.error("Error retrieving data:", error);
-    });
+    };
+
+    xhr.onerror = function () {
+      reject(new Error("Error with network, please try again."));
+      Swal.fire({
+        icon: "error",
+        text: "Error with network, please try again.",
+      });
+    };
+
+    xhr.open("GET", url);
+    xhr.send();
+  });
 }

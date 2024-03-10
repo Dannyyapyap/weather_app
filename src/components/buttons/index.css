@@ -1,4 +1,4 @@
-.searchBarBtn {
+.squareBtn {
   background-color: #6c40b5;
   border: none;
   border-radius: 20px;
@@ -8,13 +8,13 @@
   align-items: center;
 }
 
-.searchBarBtn * {
+.squareBtn * {
   color: #ffffff;
   height: 1.25em;
   width: 1.25em;
 }
 
-.historyActionButton {
+.roundBtn {
   background-color: var(--history-btn-background);
   border-radius: 100px;
   border-color: var(--history-btn-icon-border-color);
@@ -25,18 +25,18 @@
   align-items: center;
 }
 
-.historyActionButton * {
+.roundBtn * {
   color: var(--history-btn-icon);
   height: 0.9em;
   width: 0.9em;
 }
 
-.searchBarBtn:hover,
-.historyActionButton:hover {
+.squareBtn:hover,
+.roundBtn:hover {
   opacity: 80%;
 }
 
-.searchBarBtn:disabled,
-.historyActionButton:disabled {
+.squareBtn:disabled,
+.roundBtn:disabled {
   opacity: 80%;
 }

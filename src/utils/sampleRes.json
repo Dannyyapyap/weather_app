@@ -1,85 +1,42 @@
 {
-    "results": [
+    "current_temp": [
         {
             "coord": {
-                "lon": 103.8501,
-                "lat": 1.2897
+                "lon": 103.8503,
+                "lat": 1.2868
             },
             "weather": [
                 {
                     "id": 803,
                     "main": "Clouds",
                     "description": "broken clouds",
-                    "icon": "04n"
+                    "icon": "04d"
                 }
             ],
             "base": "stations",
             "main": {
-                "temp": 27.68,
-                "feels_like": 31.73,
-                "temp_min": 26.92,
-                "temp_max": 28.02,
+                "temp": 29.13,
+                "feels_like": 34.02,
+                "temp_min": 27.85,
+                "temp_max": 31.15,
                 "pressure": 1012,
-                "humidity": 83
+                "humidity": 75
             },
-            "visibility": 10000,
+            "visibility": 8000,
             "wind": {
-                "speed": 3.09,
-                "deg": 360
+                "speed": 4.63,
+                "deg": 20
             },
             "clouds": {
                 "all": 75
             },
-            "dt": 1616000000,
-            "sys": {
-                "type": 1,
-                "id": 9470,
-                "country": "MY",
-                "sunrise": 1616000000,
-                "sunset": 1616000000
-            },
-            "timezone": 28800,
-            "id": 1880252,
-            "name": "Johor",
-            "cod": 200
-        },
-        {
-            "coord": {
-                "lon": 120.9605,
-                "lat": 23.6978
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "scattered clouds",
-                    "icon": "03n"
-                }
-            ],
-            "base": "stations",
-            "main": {
-                "temp": 28.12,
-                "feels_like": 32.05,
-                "temp_min": 27.21,
-                "temp_max": 29.15,
-                "pressure": 1011,
-                "humidity": 81
-            },
-            "visibility": 10000,
-            "wind": {
-                "speed": 3.5,
-                "deg": 355
-            },
-            "clouds": {
-                "all": 40
-            },
-            "dt": 1616009000,
+            "dt": 1710045007,
             "sys": {
                 "type": 1,
                 "id": 9470,
                 "country": "SG",
-                "sunrise": 1616009000,
-                "sunset": 1616009000
+                "sunrise": 1710025921,
+                "sunset": 1710069477
             },
             "timezone": 28800,
             "id": 1880252,
@@ -88,91 +45,335 @@
         },
         {
             "coord": {
-                "lon": 121.5654,
-                "lat": 25.033
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
-            "base": "stations",
-            "main": {
-                "temp": 29.04,
-                "feels_like": 32.95,
-                "temp_min": 28.31,
-                "temp_max": 29.92,
-                "pressure": 1010,
-                "humidity": 77
-            },
-            "visibility": 10000,
-            "wind": {
-                "speed": 3.78,
-                "deg": 350
-            },
-            "clouds": {
-                "all": 0
-            },
-            "dt": 1616018000,
-            "sys": {
-                "type": 1,
-                "id": 9470,
-                "country": "TW",
-                "sunrise": 1616018000,
-                "sunset": 1616018000
-            },
-            "timezone": 28800,
-            "id": 1880252,
-            "name": "Taipei",
-            "cod": 200
-        }
-    ],
-    "results_2": [
-        {
-            "coord": {
-                "lon": 103.8501,
-                "lat": 1.2897
+                "lon": 121.5637,
+                "lat": 25.0375
             },
             "weather": [
                 {
                     "id": 803,
                     "main": "Clouds",
                     "description": "broken clouds",
+                    "icon": "04d"
+                }
+            ],
+            "base": "stations",
+            "main": {
+                "temp": 18.81,
+                "feels_like": 18.18,
+                "temp_min": 18.02,
+                "temp_max": 18.91,
+                "pressure": 1022,
+                "humidity": 55
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 6.69,
+                "deg": 80
+            },
+            "clouds": {
+                "all": 75
+            },
+            "dt": 1710045431,
+            "sys": {
+                "type": 2,
+                "id": 68223,
+                "country": "TW",
+                "sunrise": 1710022084,
+                "sunset": 1710064812
+            },
+            "timezone": 28800,
+            "id": 1675720,
+            "name": "Xianeibu",
+            "cod": 200
+        },
+        {
+            "coord": {
+                "lon": -62.313,
+                "lat": 46.41
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
                     "icon": "04n"
                 }
             ],
             "base": "stations",
             "main": {
-                "temp": 27.68,
-                "feels_like": 31.73,
-                "temp_min": 26.92,
-                "temp_max": 28.02,
-                "pressure": 1012,
-                "humidity": 83
+                "temp": -3.21,
+                "feels_like": -9.34,
+                "temp_min": -3.21,
+                "temp_max": -2.36,
+                "pressure": 1023,
+                "humidity": 81,
+                "sea_level": 1023,
+                "grnd_level": 1016
             },
             "visibility": 10000,
             "wind": {
-                "speed": 3.09,
-                "deg": 360
+                "speed": 5.68,
+                "deg": 163,
+                "gust": 9.93
             },
             "clouds": {
-                "all": 75
+                "all": 100
             },
-            "dt": 1616000000,
+            "dt": 1710045599,
             "sys": {
                 "type": 1,
-                "id": 9470,
-                "country": "MY",
-                "sunrise": 1616000000,
-                "sunset": 1616000000
+                "id": 1051,
+                "country": "CA",
+                "sunrise": 1710066657,
+                "sunset": 1710108484
             },
-            "timezone": 28800,
-            "id": 1880252,
-            "name": "Johor",
+            "timezone": -14400,
+            "id": 6151455,
+            "name": "Souris",
             "cod": 200
         }
+    ],
+    "lat_lon": [
+        [
+            {
+                "name": "Singapore",
+                "local_names": {
+                    "sm": "Sigapoa",
+                    "cy": "Singapore",
+                    "kn": "ಸಿಂಗಾಪುರ",
+                    "ja": "シンガポール",
+                    "ga": "Singeapór",
+                    "da": "Singapore",
+                    "ms": "Singapura",
+                    "ur": "سنگاپور",
+                    "zh": "新加坡",
+                    "mt": "Singapor",
+                    "fa": "سنگاپور",
+                    "et": "Singapur",
+                    "sv": "Singapore",
+                    "yi": "סינגאפור",
+                    "kw": "Singapour",
+                    "am": "ሲንጋፖር",
+                    "mr": "सिंगापूर",
+                    "ca": "Singapur",
+                    "os": "Сингапур",
+                    "ps": "سينګاپور",
+                    "km": "សិង្ហបុរី",
+                    "id": "Singapura",
+                    "de": "Singapur",
+                    "hr": "Singapur",
+                    "ru": "Сингапур",
+                    "ku": "Singapûr",
+                    "jv": "Singapura",
+                    "bn": "সিঙ্গাপুর",
+                    "ba": "Сингапур",
+                    "yo": "Singapore",
+                    "dv": "ސިންގަޕޫރު",
+                    "hu": "Szingapúr",
+                    "vi": "Tân Gia Ba",
+                    "mg": "Singapaoro",
+                    "ro": "Singapore",
+                    "su": "Singapura",
+                    "fy": "Singapore",
+                    "ml": "സിംഗപ്പൂർ",
+                    "az": "Sinqapur",
+                    "cs": "Singapur",
+                    "be": "Сінгапур",
+                    "gu": "સિંગાપુર",
+                    "oc": "Singapor",
+                    "hi": "सिंगापुर",
+                    "hy": "Սինգապուրի Հանրապետություն",
+                    "sq": "Singapori",
+                    "ht": "Sengapou",
+                    "ug": "سىنگاپور",
+                    "sl": "Singapur",
+                    "nl": "Singapore",
+                    "or": "ସିଙ୍ଗାପୁର",
+                    "ss": "ISingapholo",
+                    "na": "Tsingapoar",
+                    "el": "Σιγκαπούρη",
+                    "it": "Singapore",
+                    "pl": "Singapur",
+                    "tt": "Сингапур",
+                    "en": "Singapore",
+                    "gd": "Singeapòr",
+                    "mk": "Сингапур",
+                    "ko": "싱가포르",
+                    "gv": "Singapore",
+                    "sa": "सिङ्गापुर",
+                    "bg": "Сингапур",
+                    "ki": "Singapore",
+                    "is": "Singapúr",
+                    "lt": "Singapūras",
+                    "ta": "சிங்கப்பூர்",
+                    "fi": "Singapore",
+                    "so": "Singabuur",
+                    "mn": "Сингапур",
+                    "se": "Singapore",
+                    "ha": "Singapore",
+                    "ie": "Singapor",
+                    "kk": "Сингапур",
+                    "la": "Singapura",
+                    "pt": "Singapura",
+                    "no": "Singapore",
+                    "ka": "სინგაპური",
+                    "rw": "Singapore",
+                    "ar": "سنغافورة",
+                    "bi": "Singapore",
+                    "sk": "Singapur",
+                    "nv": "Sį́ʼgaboo",
+                    "bo": "སེང་ག་ཕོར།",
+                    "pa": "ਸਿੰਗਾਪੁਰ",
+                    "sr": "Сингапур",
+                    "gl": "Singapur",
+                    "fr": "Singapour",
+                    "ff": "Sinngapuur",
+                    "af": "Singapoer",
+                    "vo": "Singapurän",
+                    "sg": "Sïngäpûru",
+                    "wo": "Singapoor",
+                    "he": "סינגפור",
+                    "kl": "Singapore",
+                    "mi": "Hingapoa",
+                    "lb": "Singapur",
+                    "es": "Singapur",
+                    "tr": "Singapur",
+                    "cv": "Сингапур",
+                    "te": "సింగపూరు",
+                    "fo": "Singapor",
+                    "sw": "Singapuri",
+                    "my": "စင်ကာပူနိုင်ငံ",
+                    "li": "Singapore",
+                    "kv": "Сингапур",
+                    "ne": "सिंगापुर",
+                    "br": "Singapour",
+                    "th": "สิงคโปร์",
+                    "eo": "Singapuro",
+                    "uk": "Сінгапур",
+                    "tg": "Сингапур",
+                    "tl": "Singgapur",
+                    "nn": "Singapore",
+                    "lv": "Singapūra"
+                },
+                "lat": 1.2899175,
+                "lon": 103.8519072,
+                "country": "SG"
+            },
+            {
+                "name": "Taipei",
+                "local_names": {
+                    "mk": "Тајпеј",
+                    "pa": "ਤਾਈਪੇ",
+                    "lt": "Taipėjus",
+                    "hi": "ताइपे",
+                    "kk": "Тайбэй",
+                    "fr": "Taipei",
+                    "et": "Taipei",
+                    "jv": "Taipei",
+                    "pt": "Taipé",
+                    "gl": "Taipei",
+                    "ro": "Taipei",
+                    "az": "Taybey",
+                    "sl": "Tajpej",
+                    "hr": "Taipei",
+                    "fj": "Taipeh",
+                    "it": "Taipei",
+                    "tl": "Taipei",
+                    "ko": "타이베이시",
+                    "mg": "Taipei",
+                    "he": "טאיפיי",
+                    "io": "Taipei",
+                    "id": "Taipei",
+                    "cs": "Tchaj-pej",
+                    "oc": "Taipei",
+                    "lb": "Taipeh",
+                    "hu": "Tajpej",
+                    "ie": "Taipei",
+                    "pl": "Tajpej",
+                    "tr": "Taipei",
+                    "vi": "Đài Bắc",
+                    "de": "Taipeh",
+                    "uk": "Тайбей",
+                    "rw": "Tayipeyi",
+                    "bn": "তাইপে",
+                    "eu": "Taipei",
+                    "uz": "Taypey",
+                    "mr": "ताइपेइ",
+                    "da": "Taipei",
+                    "mn": "Тайбэй",
+                    "br": "Taipei",
+                    "ne": "ताइपेइ",
+                    "si": "තායිපේ",
+                    "sq": "Taipei",
+                    "gd": "Taipei",
+                    "os": "Тайбэй",
+                    "zh": "臺北市",
+                    "ga": "Taipei",
+                    "af": "Taipei",
+                    "bg": "Тайпе",
+                    "lv": "Taipeja",
+                    "ug": "تەيبېي شەھىرى",
+                    "bo": "ཐའེ་པེ",
+                    "cy": "Taipei",
+                    "nl": "Taipei",
+                    "kn": "ತೈಪೆ",
+                    "fo": "Taipei",
+                    "tg": "Тайпей",
+                    "sh": "Taipei",
+                    "ml": "തായ്‌പെയ്",
+                    "nn": "Taipei",
+                    "ca": "Taipei",
+                    "ar": "تايبيه",
+                    "qu": "T'aypik",
+                    "la": "Taipeia",
+                    "my": "ထိုင်ပေမြို့",
+                    "za": "Daizbaek",
+                    "fy": "Taipei",
+                    "bs": "Taipei",
+                    "th": "ไทเป",
+                    "yo": "Taipei",
+                    "ru": "Тайбэй",
+                    "es": "Taipéi",
+                    "ht": "Taypè",
+                    "ha": "Taipei",
+                    "no": "Taipei",
+                    "be": "Тайбэй",
+                    "fi": "Taipei",
+                    "ms": "Taipei",
+                    "sr": "Тајпеј",
+                    "sn": "Taipei",
+                    "or": "ତାଇପେ",
+                    "el": "Ταϊπέι",
+                    "sk": "Tchaj-pej",
+                    "so": "Taipei",
+                    "is": "Taípei",
+                    "ky": "Тайбэй",
+                    "ta": "தாய்பெய்",
+                    "sw": "Taipei",
+                    "ja": "台北市",
+                    "tt": "Taybey",
+                    "ia": "Taipei",
+                    "sv": "Taipei",
+                    "fa": "تایپه",
+                    "eo": "Tajpeo",
+                    "ce": "Тайбэй",
+                    "ka": "ტაიბეი",
+                    "en": "Taipei",
+                    "hy": "Թայբեյ",
+                    "am": "ታይፔ",
+                    "ur": "تائپے"
+                },
+                "lat": 25.0375198,
+                "lon": 121.5636796,
+                "country": "TW"
+            },
+            {
+                "name": "New Zealand",
+                "lat": 46.4099904,
+                "lon": -62.313043,
+                "country": "CA",
+                "state": "Prince Edward Island"
+            }
+        ]
     ]
 }
