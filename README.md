@@ -3,7 +3,7 @@ Powered by https://openweathermap.org/api
 
 This is a weather dashboard that allows user to track current weather condition in a city or location.
 
-### Assumption: 
+## Assumption: 
 1) If user did not allow for tracking of location on browser, the default will be Singapore
 3) Limit will be set to 1 to display only 1 related search result 
 4) Lat and Lon will be defaulted to Singapore Geographical location if not specified or detected
@@ -23,7 +23,7 @@ Configure .env-cmdrc.json to
     npm install
 ```
 
-### Running the development server.
+## Running the development server.
 
 By default, development server will start on localhost:3000
 
@@ -31,26 +31,30 @@ By default, development server will start on localhost:3000
     npm start
 ```
 
-### Building for development.
+## Generating build.
 
+Ensure that environments are properly configured in .env-cmdrc.json when generating build for the different environment.
+
+### Development
 ```bash
     npm run build
 ```
 
-### Building for production.
-
+### Production
 ```bash
     npm run build_prod
 ```
 
-### Running build folder
 
-## Ensure that serve is installed in the host machine
+## Running build folder
+
+Ensure that "serve" is installed in the host machine
 
 ```bash
     npm i serve
 ```
-## Build will be serve on http://localhost:3000
+
+Build will be serve on http://localhost:3000
 
 ```bash
     serve -s build
